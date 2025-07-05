@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\ModelStatus\HasStatuses;
 
 class Signalement extends Model
 {
+    use HasStatuses;
+    
     protected $fillable = [
         'user_id',
         'titre',
